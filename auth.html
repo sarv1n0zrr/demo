@@ -1,0 +1,289 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>WEB GOS</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a href="#" class="logo">LOGO</a>
+      <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#tabs">Tabs</a></li>
+        <li><a href="#form">Form</a></li>
+        <li><a href="login.html">Log In</a></li>
+      </ul>
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Landing Page -->
+    <section class="home" id="home">
+      <div class="home-text">
+        <h1>Welcome to <br />Kazakstan</h1>
+        <h5>We are ready to help you!</h5>
+        <div class="button">
+          <button onclick="openPopup()">Learn More</button>
+        </div>
+        <div class="button">
+          <button onclick="myFunction()">Dark mode</button>
+        </div>
+      </div>
+
+      <!-- Slider -->
+      <div class="slider">
+        <div class="slides">
+          <div class="slide"><img src="img/photo.jpg" alt="Image 1" /></div>
+          <div class="slide"><img src="img/photo.jpg" alt="Image 2" /></div>
+          <div class="slide"><img src="img/photo.jpg" alt="Image 3" /></div>
+          <div class="slide"><img src="img/photo.jpg" alt="Image 4" /></div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      </div>
+      <!-- Slider End  -->
+    </section>
+    <!-- Landing Page End -->
+
+    <!-- Modal Window -->
+    <div class="modalwindow">
+      <div class="popup" id="popup">
+        <h2>About Us!</h2>
+        <p>
+          We are glad to see you here! If you want to learn more about our
+          company, feel free to reach out to us at
+          <a href="mailto:email@example.com">email@example.com</a>. We're always
+          happy to connect and provide more information about our services and
+          mission.
+        </p>
+        <button type="button" onclick="closePopup()">Ok</button>
+      </div>
+    </div>
+    <!-- Modal Window End -->
+
+    <!-- Tabs -->
+    <div class="mytabs" id="tabs">
+      <input type="radio" id="tabfree" name="mytabs" checked="checked" />
+      <label for="tabfree">Free</label>
+      <div class="tab">
+        <h2>Tab 1</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur.
+        </p>
+      </div>
+
+      <input type="radio" id="tabsilver" name="mytabs" />
+      <label for="tabsilver">Silver</label>
+      <div class="tab">
+        <h2>Tab 2</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur.
+        </p>
+      </div>
+
+      <input type="radio" id="tabgold" name="mytabs" />
+      <label for="tabgold">Gold</label>
+      <div class="tab">
+        <h2>Tab 3</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur.
+        </p>
+      </div>
+    </div>
+    <!-- Tabs End -->
+
+    <!-- Application Form -->
+    <section class="newsletter-all" id="form">
+      <main class="newsletter-coloumn1">
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+          enim odit! Cum! Lorem ipsum dolor sit amet consectetur. Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Tenetur, itaque.
+        </p>
+      </main>
+      <main class="newsletter-coloumn2">
+        <form action="" id="contactForm">
+          <div class="alert">Feel free to ask!</div>
+          <div class="inputBox">
+            <input type="text" id="name" placeholder="Your name...." />
+          </div>
+          <div class="inputBox">
+            <input type="email" id="emailid" placeholder="Your Email....." />
+          </div>
+          <div class="inputBox">
+            <input type="text" placeholder="Message" id="msgContent" />
+          </div>
+          <div class="inputBox">
+            <button type="submit" id="submit">Submit</button>
+          </div>
+        </form>
+      </main>
+    </section>
+    <!-- Application Form End -->
+
+    <!-- Footer -->
+    <div class="end-content">
+      <div class="copyright">
+        <p>Copyright © Sarvinoz 2024 | All rights reserved.</p>
+      </div>
+      <div class="copyright">
+        <p>Developed by Sarvinoz</p>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Java -->
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <!-- Java End -->
+  </body>
+</html>
+
+<!-- login.html  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="login.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a href="#" class="logo">LOGO</a>
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#tabs">Tabs</a></li>
+        <li><a href="#form">Form</a></li>
+        <li><a href="login.html">Log In</a></li>
+      </ul>
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    <!-- Header End -->
+    <div class="container">
+      <div class="login-box">
+        <h1>Login</h1>
+        <form>
+          <div class="textbox">
+            <input
+              type="email"
+              placeholder="Email"
+              name="email"
+              id="email"
+              required
+            />
+          </div>
+          <div class="textbox">
+            <input
+              type="password"
+              placeholder="Password"
+              name="password"
+              id="password"
+              required
+            />
+          </div>
+          <button type="submit" class="btn" id="submit">Login</button>
+        </form>
+        <p class="info">
+          Don't have an account? <a href="register.html">Register here</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- register.html  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="registration.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a href="#" class="logo">LOGO</a>
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#tabs">Tabs</a></li>
+        <li><a href="#form">Form</a></li>
+        <li><a href="login.html">Log In</a></li>
+      </ul>
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    <!-- Header End -->
+
+    <div class="container">
+      <div class="login-box">
+        <h1>Registration</h1>
+        <form>
+          <div class="textbox">
+            <input
+              type="text"
+              placeholder="Username"
+              name="username"
+              required
+            />
+          </div>
+          <div class="textbox">
+            <input
+              type="email"
+              placeholder="Email"
+              name="email"
+              id="email"
+              required
+            />
+          </div>
+          <div class="textbox">
+            <input
+              type="password"
+              placeholder="Password"
+              name="password"
+              id="password"
+              required
+            />
+          </div>
+          <button type="submit" class="btn" id="submit">Register</button>
+        </form>
+        <p class="info">
+          Already have an account? <a href="login.html">Login here</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
